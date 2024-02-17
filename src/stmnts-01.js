@@ -14,7 +14,13 @@
  */
 function nextInteger(int) {
   // write your code here & return value
+  int += 1;
+  return int;
 }
+nextInteger(1);
+nextInteger(2);
+nextInteger(13);
+nextInteger(-14);
 /**
  * Calculates the product of two numbers
  * @param {number} a - First number
