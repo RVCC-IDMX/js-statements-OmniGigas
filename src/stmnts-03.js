@@ -15,7 +15,13 @@
 
 function rectanglePerimeter(width, height) {
   // write your code here & return
+  const perimeter = (width + height) * 2;
+  const rndPerimeter = perimeter.toFixed(1);
+  return rndPerimeter;
 }
+rectanglePerimeter(2, 3);
+rectanglePerimeter(3, 4);
+rectanglePerimeter(4, 5);
 
 /**
  * Calculates the area of a rectangle rounded to 2 decimal places
