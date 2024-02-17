@@ -14,13 +14,14 @@
  */
 function nextInteger(int) {
   // write your code here & return value
-  int += 1;
-  return int;
+  const plusOne = int + 1;
+  return plusOne;
 }
 nextInteger(1);
 nextInteger(2);
 nextInteger(13);
 nextInteger(-14);
+
 /**
  * Calculates the product of two numbers
  * @param {number} a - First number
@@ -29,7 +30,13 @@ nextInteger(-14);
  */
 function times(a, b) {
   // write your code here & return value
+  const product = a * b;
+  return product;
 }
+times(2, 3);
+times(3, 3);
+times(0, 3);
+times(-5, 4);
 
 /**
  * Converts the number of minutes into seconds
@@ -38,7 +45,13 @@ function times(a, b) {
  */
 function convertMinutesToSeconds(minutes) {
   // write your code here & return value
+  const seconds = minutes * 60;
+  return seconds;
 }
+convertMinutesToSeconds(1);
+convertMinutesToSeconds(2);
+convertMinutesToSeconds(1.5);
+convertMinutesToSeconds(0);
 
 /**
  * Converts the number of hours into seconds
@@ -47,7 +60,14 @@ function convertMinutesToSeconds(minutes) {
  */
 function convertHoursToSeconds(hours) {
   // write your code here & return value
+  const minutes = hours * 60;
+  const seconds = minutes * 60;
+  return seconds;
 }
+convertMinutesToSeconds(1);
+convertMinutesToSeconds(2);
+convertMinutesToSeconds(1.5);
+convertMinutesToSeconds(0);
 
 module.exports = {
   nextInteger,
