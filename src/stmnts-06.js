@@ -13,7 +13,18 @@
  */
 function isString(str) {
   // write your code here & return
+  if (typeof str === 'string') {
+    return true;
+  }
+  return false;
 }
+isString('hello');
+isString('1');
+isString('');
+isString(1);
+isString(true);
+isString(null);
+isString(undefined);
 
 /**
  * Returns a boolean indicating whether the given value an empty string
@@ -22,7 +33,14 @@ function isString(str) {
  */
 function isBlank(str) {
   // write your code here & return
+  if (str === '') {
+    return true;
+  }
+  return false;
 }
+isBlank('');
+isBlank(' ');
+isBlank(32);
 
 /**
  * Creates a new string by concatenating the given strings
@@ -34,7 +52,13 @@ function isBlank(str) {
  */
 function sayHelloOrBye(name, num) {
   // write your code here & return
+  if (num === 0) {
+    return `Hello ${name}`;
+  }
+  return `Bye ${name}`;
 }
+sayHelloOrBye('Woody', 0);
+sayHelloOrBye('Buzz Lightyear', 1);
 
 /**
  * Checks if 2 strings have the same value, case sensitive
@@ -45,7 +69,15 @@ function sayHelloOrBye(name, num) {
  */
 function compareStrings(str1, str2) {
   // write your code here & return
+  if (str1 === str2) {
+    return true;
+  }
+  return false;
 }
+compareStrings('hello', 'hello');
+compareStrings('hello', 'world');
+compareStrings('hello', 'hello world');
+compareStrings('Hello', 'hello');
 
 module.exports = {
   isString,
