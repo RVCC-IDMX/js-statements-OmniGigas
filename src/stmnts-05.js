@@ -13,7 +13,16 @@
  */
 function isOdd(num) {
   // write your code here & return
+  const checkOdd = num % 2;
+  if (checkOdd === 1) {
+    return true;
+  }
+  return false;
 }
+isOdd(13);
+isOdd(0);
+isOdd(1);
+isOdd(-1);
 
 /**
  * Check if a number is even
