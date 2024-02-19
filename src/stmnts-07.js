@@ -14,6 +14,10 @@
  */
 function logicalAnd(a, b) {
   // write your code here & return
+  if (Boolean(a) === true && Boolean(b) === true) {
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -24,6 +28,10 @@ function logicalAnd(a, b) {
  */
 function logicalOr(a, b) {
   // write your code here & return
+  if (Boolean(a) === true || Boolean(b) === true) {
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -33,6 +41,10 @@ function logicalOr(a, b) {
  */
 function invertBoolean(bool) {
   // write your code here & return
+  if (Boolean(bool) === true) {
+    return false;
+  }
+  return true;
 }
 
 /**
@@ -50,6 +62,10 @@ function invertBoolean(bool) {
  */
 function numberOfOdds(num) {
   // write your code here & return
+  const count = num / 2;
+  const rndCount = count.toFixed(1);
+  const oddCount = Math.floor(rndCount);
+  return +oddCount;
 }
 
 /**
@@ -63,6 +79,9 @@ function numberOfOdds(num) {
  */
 function addUpTheNumbers(num) {
   // write your code here & return
+  for (let i = 0; i <= num; i += 1) {
+    const sumNum = i;
+  }
 }
 
 /**
@@ -82,6 +101,15 @@ function addUpTheNumbers(num) {
  */
 function gradeGenerator(score) {
   // write your code here & return
+  if (score >= 90) {
+    return 'A';
+  } if (score >= 80) {
+    return 'B';
+  } if (score >= 70) {
+    return 'C';
+  } if (score >= 60) {
+    return 'D';
+  } return 'F';
 }
 
 /**
@@ -102,6 +130,15 @@ function gradeGenerator(score) {
  */
 function getGrade(name, score) {
   // write your code here & return
+  if (score >= 90) {
+    return `${name} got an A`;
+  } if (score >= 80) {
+    return `${name} got a B`;
+  } if (score >= 70) {
+    return `${name} got a C`;
+  } if (score >= 60) {
+    return `${name} got a D`;
+  } return `${name} got an F`;
 }
 
 module.exports = {

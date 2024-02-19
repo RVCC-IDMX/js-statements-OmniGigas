@@ -17,10 +17,6 @@ function nextInteger(int) {
   const plusOne = int + 1;
   return plusOne;
 }
-nextInteger(1);
-nextInteger(2);
-nextInteger(13);
-nextInteger(-14);
 
 /**
  * Calculates the product of two numbers
@@ -33,10 +29,6 @@ function times(a, b) {
   const product = a * b;
   return product;
 }
-times(2, 3);
-times(3, 3);
-times(0, 3);
-times(-5, 4);
 
 /**
  * Converts the number of minutes into seconds
@@ -48,10 +40,6 @@ function convertMinutesToSeconds(minutes) {
   const seconds = minutes * 60;
   return seconds;
 }
-convertMinutesToSeconds(1);
-convertMinutesToSeconds(2);
-convertMinutesToSeconds(1.5);
-convertMinutesToSeconds(0);
 
 /**
  * Converts the number of hours into seconds
@@ -64,10 +52,6 @@ function convertHoursToSeconds(hours) {
   const seconds = minutes * 60;
   return seconds;
 }
-convertMinutesToSeconds(1);
-convertMinutesToSeconds(2);
-convertMinutesToSeconds(1.5);
-convertMinutesToSeconds(0);
 
 module.exports = {
   nextInteger,

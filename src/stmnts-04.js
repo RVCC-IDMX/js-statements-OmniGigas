@@ -17,10 +17,6 @@ function fahrenheitToCelsius(fahrenheit) {
   const rndCelsius = celsius.toFixed(2);
   return +rndCelsius;
 }
-fahrenheitToCelsius(32);
-fahrenheitToCelsius(212);
-fahrenheitToCelsius(0);
-fahrenheitToCelsius(40.25);
 
 /**
  * Converts a temperature in Celsius to Fahrenheit rounded to 2 decimal places
@@ -33,10 +29,6 @@ function celsiusToFahrenheit(celsius) {
   const rndFahrenheit = fahrenheit.toFixed(2);
   return +rndFahrenheit;
 }
-celsiusToFahrenheit(0);
-celsiusToFahrenheit(100);
-celsiusToFahrenheit(-17.78);
-celsiusToFahrenheit(20.25);
 
 module.exports = {
   fahrenheitToCelsius,

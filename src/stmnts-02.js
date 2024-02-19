@@ -18,11 +18,6 @@ function sum(a, b) {
   const result = a + b;
   return result;
 }
-sum(1, 2);
-sum(-1, 55);
-sum(0, 0);
-sum(0, -1);
-sum(1, -1);
 
 /**
  * Calculates the sum of two numbers (even if they are passed as strings)
@@ -38,10 +33,6 @@ function betterSum(x, y) {
 
   return convertSum;
 }
-betterSum('1', '2');
-betterSum('-1', '55');
-betterSum('0', '0');
-betterSum(0, '-1');
 
 /**
  * Calculates the remainder of two numbers, the first divided by the second
@@ -57,11 +48,6 @@ function remainder(number, divisor) {
   const leftOver = number % divisor;
   return leftOver;
 }
-remainder(22, 2);
-remainder(5, 2);
-remainder(179, 3);
-remainder(193, 11);
-remainder(0, 0);
 
 module.exports = {
   sum,

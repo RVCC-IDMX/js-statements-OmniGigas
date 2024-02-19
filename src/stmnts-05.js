@@ -19,10 +19,6 @@ function isOdd(num) {
   }
   return false;
 }
-isOdd(13);
-isOdd(0);
-isOdd(1);
-isOdd(-1);
 
 /**
  * Check if a number is even
@@ -37,10 +33,6 @@ function isEven(num) {
   }
   return false;
 }
-isEven(32);
-isEven(0);
-isEven(1);
-isEven(-1);
 
 /**
  * Check if a value is a number and negative
@@ -54,11 +46,6 @@ function isNegative(value) {
   }
   return false;
 }
-isNegative(-1);
-isNegative(-100.5);
-isNegative(0);
-isNegative(1);
-isNegative(32);
 
 module.exports = {
   isOdd,

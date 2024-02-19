@@ -18,13 +18,6 @@ function isString(str) {
   }
   return false;
 }
-isString('hello');
-isString('1');
-isString('');
-isString(1);
-isString(true);
-isString(null);
-isString(undefined);
 
 /**
  * Returns a boolean indicating whether the given value an empty string
@@ -38,9 +31,6 @@ function isBlank(str) {
   }
   return false;
 }
-isBlank('');
-isBlank(' ');
-isBlank(32);
 
 /**
  * Creates a new string by concatenating the given strings
@@ -57,8 +47,6 @@ function sayHelloOrBye(name, num) {
   }
   return `Bye ${name}`;
 }
-sayHelloOrBye('Woody', 0);
-sayHelloOrBye('Buzz Lightyear', 1);
 
 /**
  * Checks if 2 strings have the same value, case sensitive
@@ -74,10 +62,6 @@ function compareStrings(str1, str2) {
   }
   return false;
 }
-compareStrings('hello', 'hello');
-compareStrings('hello', 'world');
-compareStrings('hello', 'hello world');
-compareStrings('Hello', 'hello');
 
 module.exports = {
   isString,

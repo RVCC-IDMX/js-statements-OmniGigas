@@ -19,9 +19,6 @@ function rectanglePerimeter(width, height) {
   const rndPerimeter = perimeter.toFixed(2);
   return +rndPerimeter;
 }
-rectanglePerimeter(2, 3);
-rectanglePerimeter(3, 4);
-rectanglePerimeter(4, 5);
 
 /**
  * Calculates the area of a rectangle rounded to 2 decimal places
@@ -36,10 +33,6 @@ function rectangleArea(width, height) {
   const rndArea = area.toFixed(2);
   return +rndArea;
 }
-rectangleArea(2, 3);
-rectangleArea(2.5, 3);
-rectangleArea(3, 4);
-rectangleArea(4.2, 5);
 
 /**
  * Calculates the circumference of a circle with a known radius
@@ -57,9 +50,6 @@ function circleCircumference(radius) {
   const rndCirc = circ.toFixed(2);
   return +rndCirc;
 }
-circleCircumference(2);
-circleCircumference(3);
-circleCircumference(4);
 
 /**
  * Calculates the area of a circle with a known radius
@@ -73,9 +63,6 @@ function circleArea(radius) {
   const roundArea = circArea.toFixed(2);
   return +roundArea;
 }
-circleArea(2);
-circleArea(3);
-circleArea(4);
 
 /**
  * Calculates the area of a triangle with three sides
@@ -91,10 +78,6 @@ function triangleArea(base, height) {
   const rndTri = triArea.toFixed(2);
   return +rndTri;
 }
-triangleArea(2, 3);
-triangleArea(3, 4);
-triangleArea(4, 5);
-triangleArea(4.5, 5.5);
 
 /**
  * Calculates the hypotenuse of a right triangle with two sides,
@@ -110,9 +93,6 @@ function pythagorean(sideA, sideB) {
   const rndC = sideC.toFixed(2);
   return +rndC;
 }
-pythagorean(3, 4);
-pythagorean(4, 7);
-pythagorean(4.5, 7.5);
 
 module.exports = {
   rectanglePerimeter,
